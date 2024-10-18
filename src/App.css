@@ -45,7 +45,8 @@ main article{
   max-height: 200px;
   border: 5px solid black;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: "adatok"
+                         "gombok";
   margin: auto;
   background-color: #282c34;
   color: white;
@@ -70,7 +71,7 @@ main article{
   background-color: #282c34;
   color: white;
   border-bottom: 2px solid white;
-
+  min-height: 84vh;
 }
 
 .termek button:hover{
@@ -125,15 +126,25 @@ main article{
                        'adatok';
   padding-bottom: 20px;
   margin-bottom: 50px;
+  margin-left: 400px;
+  position: fixed;
+  border: 10px solid black;
+}
+
+.gombok{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60px;
+  margin: auto;
 }
 
 .adatok{
-  grid-area: adatok;
   display: grid;
   grid-template-columns: 1fr;
   width: 300px;
   gap: 10px;
   margin: auto;
+  grid-area: adatok;
 }
 
 .adatok button{

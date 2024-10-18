@@ -37,8 +37,5 @@ export const termekLista =
             db: 0
         },
     ]
-
-export const kosarLista =
-    [
-
-    ]
+export let LocalS_termekLista = JSON.parse(window.localStorage.getItem('termekeklista')) || [];
+export let LocalS_kosarLista = JSON.parse(window.localStorage.getItem('kosarLista')) || [];
